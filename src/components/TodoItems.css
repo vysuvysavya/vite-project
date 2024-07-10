@@ -1,0 +1,43 @@
+.todoitems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+  }
+  
+  .todoitems:hover {
+    background: #f0f0f0;
+  }
+  
+  .todoitems-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .todoitems-container.line-through .todoitems-text {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  .todoitems-text {
+    margin-left: 10px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .todoitems-cross-icon {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .todoitems-cross-icon:hover {
+    transform: scale(1.2);
+  }
+  
